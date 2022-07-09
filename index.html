@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>payment_detail</title>
+   <link rel="stylesheet" href="st.css">
+    <style>
+        h1{
+            text-align: center;
+        }
+        h2{
+            font-size: 40px;
+            font-family:Dancing Script;
+            text-decoration: underline;
+            font-weight: 1000;
+        }
+        nav{
+            overflow: hidden;
+            background-color: aqua;
+            border-radius: 10px;
+            border-width: 1px ;
+            border-style: solid;
+            border-color:black;
+            margin: 10px;
+        
+        }
+        nav a{
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            padding: 20px;
+            float: left;
+            
+        }
+    </style>
+    <style>
+       body{
+          background-color:white;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        div{
+            padding: 20px;
+            border: 5px solid black;
+        }
+       
+    </style>
+</head>
+<body>
+   <div class='back'>
+    
+    <h1 style="font-size:50px ;">Payment Form</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Hello</a>
+        <a href="#">College</a>
+        <a href="#">Bank</a>
+        <a href="#">Money</a>
+    </nav>
+    
+    
+    <div class="x">
+    <h2>Contact information</h2>
+    <p>Name:* <input type="text" name="name" id="name" placeholder="Devansh Oberoi" required></p>
+    <p>
+        <fieldset><legend>gender</legend>
+            male: <input type="radio" name="gender" id="male"> female: <input type="radio" name="gender" id="female"></p>
+
+        </fieldset>
+    <p>phone no.: <input type="number" name="phone" id="phone" placeholder="1234567890"></p>
+    <p>address: <textarea id="address" name="address" cols="50" rows="5" placeholder="your address"></textarea></p>
+    <p>email id: <input type="email" name="email" id="email" placeholder="oberoidevansh@gmail.com" ></p>
+    <a href="https://designndecorous.com/" target="_blank" >designndecorous</a>
+    </div>
+    <br>
+    <br>
+
+
+    <h2>Payment Information</h2>
+    
+    <p>
+        Card Type :
+        <select>
+            <option value="">_ Select a Card _</option>
+            <option value="visa">VISA</option>
+            <option value="rupay">RUPAY</option>
+            <option value="upi">UPI</option>
+        
+        </select>
+    </p>
+    <p>card number: <input type="number" name="cardno" id="cardno"></p>
+    <p>expiry date: <input type="date" name="expdate" id="expdate"></p>
+    <p>CVV: <input type="password" name="cvv" id="cvv"></p>
+    <input type="submit" value="PAY NOW" style="color:white ;">
+    </div>
+</body>
+</html>
